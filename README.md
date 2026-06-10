@@ -23,11 +23,17 @@ Build a Unix-like shell in modern C++ to learn:
 - Created first executable
 - Initialized Git repository
 
+### Day 1
+
+- Implemented interactive shell loop
+- Added user input handling
+- Added exit command
+
 ## Goals
 
-- [ ] Interactive shell prompt
-- [ ] Read user input
-- [ ] Exit command
+- [x] Interactive shell prompt
+- [x] Read user input
+- [x] Exit command
 - [ ] Tokenize commands
 - [ ] Execute commands
 - [ ] Support pipes

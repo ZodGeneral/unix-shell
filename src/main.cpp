@@ -1,13 +1,21 @@
 #include <iostream>
+#include <string>
 
 int main()
 {
-    std::cout << "Welcome to Austin's shell project.\n";
-
     while (true)
     {
+        std::string command;
+
         std::cout << "$ ";
-        break;
+        std::getline(std::cin, command);
+
+        if (command == "exit")
+        {
+            break;
+        }
+
+        std::cout << "You entered: " << command << '\n';
     }
 
     return 0;
