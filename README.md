@@ -29,12 +29,20 @@ Build a Unix-like shell in modern C++ to learn:
 - Added user input handling
 - Added exit command
 
+### Day 2
+
+- Implemented tokenizer module
+- Added argument parsing
+- Added EOF handling
+- Improved builtin command handling
+- Ignored empty input
+
 ## Goals
 
 - [x] Interactive shell prompt
 - [x] Read user input
 - [x] Exit command
-- [ ] Tokenize commands
+- [x] Tokenize commands
 - [ ] Execute commands
 - [ ] Support pipes
 - [ ] Support redirection
