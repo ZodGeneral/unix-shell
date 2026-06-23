@@ -2,6 +2,8 @@
 #include <string>
 #include <vector>
 #include "tokenizer.h"
+#include "argv_builder.h"
+
 int main()
 {
     std::string command;
@@ -26,6 +28,8 @@ int main()
             continue;
         }
 
+        auto argv = buildArgv(tokens);
+
         if (tokens.front() == "exit")
         {
             break;
@@ -42,19 +46,29 @@ int main()
             continue;
         }
 
-        else
-        {
-            std::cout << "Unknown command\n";
-            continue;
-        }
+        //else
+        //{
+        //    std::cout << "Unknown command\n";
+        //    continue;
+        //}
 
-        for (size_t i = 0; i < tokens.size(); ++i)
+        size_t i = 0;
+
+        for (; i < tokens.size(); ++i)
         {
             std::cout << "argument[" << i << "]: "
                       << tokens[i] << '\n';
         }
 
         std::cout << "\n";
+
+        i = 0;
+
+        while (argv[i] != nullptr)
+        {
+            std::cout << argv[i] << '\n';
+            ++i;
+        }
     }
     std::cout << "See you at the crossroads...\n";
 

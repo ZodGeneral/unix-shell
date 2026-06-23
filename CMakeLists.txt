@@ -7,4 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(unix_shell src/main.cpp
         src/tokenizer.h
-        src/tokenizer.cpp)
+        src/tokenizer.cpp
+        src/argv_builder.cpp
+        src/argv_builder.h)
