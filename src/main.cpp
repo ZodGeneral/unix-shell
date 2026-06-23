@@ -31,6 +31,23 @@ int main()
             break;
         }
 
+        else if (tokens.front() == "help")
+        {
+            std::cout << "Crossroads Shell\n\nBuilt-in commands:\n\thelp\n\tversion\n\texit\n";
+            continue;
+        }
+
+        else if (tokens.front() == "version") {
+            std::cout << "Crossroads Shell\nVersion 0.0.1\n";
+            continue;
+        }
+
+        else
+        {
+            std::cout << "Unknown command\n";
+            continue;
+        }
+
         for (size_t i = 0; i < tokens.size(); ++i)
         {
             std::cout << "argument[" << i << "]: "
